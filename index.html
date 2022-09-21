@@ -6,6 +6,7 @@
     <meta name="discription" content="O melhor conforto com os melhores roteiros!">
     <title>AlohaTour | Home</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -23,17 +24,94 @@
         <section class="conteudo-principal">
             <div class="conteudo-principal-escrito">
                 <h1 class="conteudo-principal-escrito-titulo">Aloha Tour</h1>
-                <h2 class="conteudo-principal-escrito-subtitulo">Agende seus passeios com os melhores roteiros do Rio de Janeiro.</h2>
+                <h2 class="conteudo-principal-escrito-subtitulo">Agende passeios com os melhores roteiros do Rio de Janeiro.</h2>
                 <button class="conteudo-principal-escrito-botao" href=""><strong>Roteiros</strong></button>
             </div>
-            <div id="slider">
-                    <img class="selected" src="carrossel3.png" alt="img1">
-                    <img src="carrossel1.png" alt="img2">
-                    <img src="carrossel2.png" alt="img3">
-                    <img src="carrossel4.png" alt="img4">
-            </div>
+            <div class="swiper mySwiper container">
+				<div class="swiper-wrapper content">
+				
+					<div class="swiper-slide card">
+						<div class="card-content">
+							<div class="image">
+								<img src="carrossel1.jpeg" alt="img1">
+							</div>
+						</div>
+					</div>
+					
+					<div class="swiper-slide card">
+						<div class="card-content">
+							<div class="image">
+								<img src="carrossel2.png" alt="img2">
+							</div>
+						</div>
+					</div>
+					
+					<div class="swiper-slide card">
+						<div class="card-content">
+							<div class="image">
+								<img src="carrossel3.jpeg" alt="img3">
+							</div>
+						</div>
+					</div>
+					
+					<div class="swiper-slide card">
+						<div class="card-content">
+							<div class="image">
+								<img src="carrossel4.jpeg" alt="img4">
+							</div>
+						</div>
+					</div>
+					
+					<div class="swiper-slide card">
+						<div class="card-content">
+							<div class="image">
+								<img src="carrossel5.jpeg" alt="img5">
+							</div>
+						</div>
+					</div>
+					
+					<div class="swiper-slide card">
+						<div class="card-content">
+							<div class="image">
+								<img src="carrossel6.jpeg" alt="img6">
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-pagination"></div>
+			</div>
+			
+			
+			
         </section>
-
+		
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		
+		<script>
+		
+		var swiper = new Swiper(" .mySwiper",{
+			slidesPerView:3,
+			spaceBetween:30,
+			slidesPerGroup:3,
+			loop:true,
+			loopfillGroupWithBlank:true,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev"			
+			}
+		}
+		)
+		
+		</script>
+		
         <section class="conteudo-secundario">
             <h3 class="conteudo-secundario-titulo">O que te faz querer praia?</h3>
             <p class="conteudo-secundario-paragrafo">1. Férias!</p>
