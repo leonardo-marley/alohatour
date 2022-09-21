@@ -22,27 +22,52 @@ body {
 }
 
 .cabecalho {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding: 2px;
+    padding: 1px 100px;
+	box-sizing: border-box;
 }
-.cabecalho-menu {
-    display: flex;
-    gap: 32px;
+nav {
+    width:100%;
+	height:50px;
+	background: rgba(0 0 0 0.8);
+	border-top: 1px solid rgba(255,255,255,.2);
+	border-bottom: 1px solid rgba(255,255,255,.2);
+	position: stycki;
+	top: 0;
 }
 
-.cabecalho-menu-item {
+nav ul {
+	display:flex;
+	margin: 0;
+	padding: 0 100px;
+	float: right;
+}
+
+nav ul li a {
+	display: block;
     font-family: 'Sarala',sans-serif;
     color: #fffafa;
-    font-weigth: 400;
-    font-size: 18px;
+    font-weight: bold;
+    font-size: 15px;
+	padding: 0 20px;
+	text-transform: uppercase;
+	text-decoration:none;
+	line-height: 50px;
+}
+
+nav ul li a:hover{
+	background: rgba(50, 171, 226, 0.5);
+}
+nav ul li a.active{
+	background: rgba(50, 171, 226, 0.5);
+}
+
+nav ul li{
+	list-style: none;
 }
 
 .conteudo {
     margin-bottom: 48px;
-    border-top: 0.4px solid #fffafa;
+    border-top: 0px solid #fffafa;
 }
 
 .conteudo-principal {
