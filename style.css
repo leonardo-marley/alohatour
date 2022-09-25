@@ -11,7 +11,6 @@
 body {
     font-size: 100%;
     background-image: url("background.jpg");
-    background-color: #cccccc;
     /* Full height */
     height: 100%;
     /* Center and scale the image nicely */
@@ -25,14 +24,19 @@ body {
     padding: 1px 100px;
 	box-sizing: border-box;
 }
+
+.cabecalho-imagem {
+	height: 80px;
+	width:130px;
+}
 nav {
     width:100%;
 	height:50px;
-	background: rgba(0 0 0 0.8);
+	background-color: rgba(195,195,195,.3);
 	border-top: 1px solid rgba(255,255,255,.2);
 	border-bottom: 1px solid rgba(255,255,255,.2);
-	position: stycki;
-	top: 0;
+	position: sticky;
+	top: 0px;
 }
 
 nav ul {
@@ -51,14 +55,14 @@ nav ul li a {
 	padding: 0 20px;
 	text-transform: uppercase;
 	text-decoration:none;
-	line-height: 50px;
+	line-height: 49px;
 }
 
 nav ul li a:hover{
-	background: rgba(50, 171, 226, 0.5);
+	background: rgba(50, 171, 226, 0.7);
 }
 nav ul li a.active{
-	background: rgba(50, 171, 226, 0.5);
+	background: rgba(50, 171, 226, 0.7);
 }
 
 nav ul li{
@@ -67,18 +71,27 @@ nav ul li{
 
 .conteudo {
     margin-bottom: 48px;
-    border-top: 0px solid #fffafa;
+    border-top: 1px solid rgba(255,255,255,.2);
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 .conteudo-principal {
-	background-image:url('bgsec1.jpg');
-	background-size: cover;
-	text-shadow: 1px 1px 0 #fff;
+	background-image: url("bgsec1.jpg");
+    /* Full height */
+	width: 100%;
+    height: 100vh;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-	height: 700px;
 }
 
 .conteudo-principal-escrito {
@@ -90,29 +103,34 @@ nav ul li{
 
 .conteudo-principal-escrito-titulo {
     font-family: 'Righteous', cursive;
-    color: #004c5e;
+    color: #fffafa;
     font-weigth: 400;
     font-size: 64px;
 }
 
 .conteudo-principal-escrito-subtitulo {
     font-family: 'Sarala',sans-serif;
-    color: #004c5e;
+    color: #fffafa;
     font-weigth: 400;
     font-size: 24px;
 }
 
 .conteudo-principal-escrito-botao {
-    background-color: #fff35c;
+    background-color: #bfc616;
     width: 180px;
     height: 60px;
     border: none;
     box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     font-family: 'Sarala',sans-serif;
-    color: #004c5e;
+    color: #fffafa;
     font-weigth: 400;
     font-size: 24px;
+	transition:all 0.4s;
+}
+
+.conteudo-principal-escrito-botao:hover{
+	background-color: rgba(0, 0, 0, 0.25);
 }
 
 .swiper{
@@ -161,7 +179,7 @@ section .card .image img:hover{
 }
 
 .conteudo-secundario {
-    background-image:;
+    background-color: rgba(135, 208, 181, 1.0);;
     display: flex;
     flex-direction: column;
     align-items: center;
