@@ -1,27 +1,16 @@
-let time = 2000,
-    currentImageIndex = 0,
-    images = document
-        .querySelectorAll("#slider img")
-    max = images.length;
-
-function nextImage(){
-
-    images[currentImageIndex]
-        .classList.remove("selected")
-
-    currentImageIndex++
-
-    if(currentImageIndex >= max)
-        currentImageIndex = 0
-
-    images[currentImageIndex]
-        .classList.add("selected")
-}
-
-function start() {
-    setInterval(() => {
-        nextImage()
-    }, time)
-}
-
-window.addEventListener("load",start)
+	var swiper = new Swiper(" .mySwiper",{
+			slidesPerView:3,
+			spaceBetween:30,
+			slidesPerGroup:3,
+			loop:true,
+			loopfillGroupWithBlank:true,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev"			
+			}
+		}
+		)
