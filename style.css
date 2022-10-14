@@ -31,6 +31,7 @@ body {
 	height: 100px;
 	width:150px;
 	border-radius: 80px;
+	box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
 }
 nav {
     width:100%;
@@ -195,7 +196,7 @@ section .card .image img:hover{
 .conteudo-secundario-titulo {
 	margin-left: 5vw;
 	margin-top: 48px;
-    font-family: 'Sarala',sans-serif;
+    font-family: 'Righteous', cursive;
     color: #FFFFFF;
     font-weigth: 400;
     font-size: 28px;
@@ -209,7 +210,7 @@ section .card .image img:hover{
 .passeio-destaque1, .passeio-destaque2, .passeio-destaque3, .passeio-destaque4 {
 	height: 70vh;
 	width: 20vw;
-	background-color: rgba(255, 255, 255, 1.0);
+	background-color: rgba(50, 171, 226, 1.0);
 	margin-left: 4vw;
 	margin-bottom: 40px;
 	box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
@@ -217,31 +218,49 @@ section .card .image img:hover{
 }
 
 .passeio-destaque1 .gruta {
-	height: 45vh;
-	width: 20vw;
+	height: 44vh;
+	width: 19vw;
 	border-radius: 10px;
+	box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+	margin-left: 0.5vw;
+	margin-top: 1vh;
+}
+
+.passeio-destaque1 .gruta:hover {
+	transform: scale(1.07);
+	transition: .5s;
 }
 
 .passeio-destaque1 .gruta-titulo{
 	margin-left: 1vw;
 	margin-top: 10px;
-    font-family: 'Sarala',sans-serif;
-    color: #000000;
+	font-family: 'Righteous', cursive;
+    color: rgba(255, 255, 255, 1.0);
     font-weigth: 400;
-    font-size: 16px;
+    font-size: 18px;
+	font-weigth: 600;
 }
 
 .passeio-destaque1 .gruta-roteiro{
 	margin-left: 1vw;
 	margin-top: 5px;
     font-family: 'Sarala',sans-serif;
-    color: #000000;
+    color: rgba(255, 255, 255, 1.0);
     font-weigth: 400;
-    font-size: 13px;
+    font-size: 14px;
+}
+
+.passeio-destaque1 .gruta-roteiro-h{
+	margin-left: 1vw;
+	margin-top: 5px;
+    font-family: 'Sarala',sans-serif;
+    color: rgba(255, 255, 255, 1.0);
+    font-weigth: 400;
+    font-size: 16px;
 }
 
 .passeio-destaque1 .gruta-info-botton{
-	background-color: rgba(50, 171, 226, 1.0);
+	background-color: rgba(255, 255, 255, 1.0);
     width: 10vw;
     height: 5vh;
     border: none;
@@ -249,7 +268,7 @@ section .card .image img:hover{
     box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     font-family: 'Sarala',sans-serif;
-    color: #fffafa;
+    color: rgba(50, 171, 226, 1.0);
     font-weigth: 600;
     font-size: 13px;
 	transition:all 0.4s;
@@ -257,6 +276,198 @@ section .card .image img:hover{
 }
 
 .passeio-destaque1 .gruta-info-botton:hover{
+		transform: scale(1.07);
+}
+
+/* Destaque 2*/
+
+.passeio-destaque2 .volta-ilha-destaque {
+	height: 44vh;
+	width: 19vw;
+	border-radius: 10px;
+	box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+	margin-left: 0.5vw;
+	margin-top: 1vh;
+}
+
+.passeio-destaque2 .volta-ilha-destaque:hover {
+	transform: scale(1.07);
+	transition: .5s;
+}
+
+.passeio-destaque2 .volta-ilha-destaque-titulo{
+	margin-left: 1vw;
+	margin-top: 10px;
+	font-family: 'Righteous', cursive;
+    color: rgba(255, 255, 255, 1.0);
+    font-weigth: 400;
+    font-size: 18px;
+	font-weigth: 600;
+}
+
+.passeio-destaque2 .volta-ilha-horario{
+	margin-left: 1vw;
+	margin-top: 5px;
+    font-family: 'Sarala',sans-serif;
+    color: rgba(255, 255, 255, 1.0);
+    font-weigth: 400;
+    font-size: 14px;
+}
+
+.passeio-destaque2 .volta-ilha-horario-h{
+	margin-left: 1vw;
+	margin-top: 5px;
+    font-family: 'Sarala',sans-serif;
+    color: rgba(255, 255, 255, 1.0);
+    font-weigth: 400;
+    font-size: 16px;
+}
+
+.passeio-destaque2 .volta-ilha-info-botton{
+	background-color: rgba(255, 255, 255, 1.0);
+    width: 10vw;
+    height: 5vh;
+    border: none;
+	margin-left: 5vw;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Sarala',sans-serif;
+    color: rgba(50, 171, 226, 1.0);
+    font-weigth: 600;
+    font-size: 13px;
+	transition:all 0.4s;
+	margin-top: 13px;
+}
+
+.passeio-destaque2 .volta-ilha-info-botton:hover{
+		transform: scale(1.07);
+}
+
+/* Destaque 3*/
+
+.passeio-destaque3 .meia-volta-ilha-destaque {
+	height: 44vh;
+	width: 19vw;
+	border-radius: 10px;
+	box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+	margin-left: 0.5vw;
+	margin-top: 1vh;
+}
+
+.passeio-destaque3 .meia-volta-ilha-destaque:hover {
+	transform: scale(1.07);
+	transition: .5s;
+}
+
+.passeio-destaque3 .meia-volta-ilha-destaque-titulo{
+	margin-left: 1vw;
+	margin-top: 10px;
+	font-family: 'Righteous', cursive;
+    color: rgba(255, 255, 255, 1.0);
+    font-weigth: 400;
+    font-size: 18px;
+	font-weigth: 600;
+}
+
+.passeio-destaque3 .meia-volta-ilha-horario{
+	margin-left: 1vw;
+	margin-top: 5px;
+    font-family: 'Sarala',sans-serif;
+    color: rgba(255, 255, 255, 1.0);
+    font-weigth: 400;
+    font-size: 14px;
+}
+
+.passeio-destaque3 .meia-volta-ilha-horario-h{
+	margin-left: 1vw;
+	margin-top: 5px;
+    font-family: 'Sarala',sans-serif;
+    color: rgba(255, 255, 255, 1.0);
+    font-weigth: 400;
+    font-size: 16px;
+}
+
+.passeio-destaque3 .meia-volta-ilha-info-botton{
+	background-color: rgba(255, 255, 255, 1.0);
+    width: 10vw;
+    height: 5vh;
+    border: none;
+	margin-left: 5vw;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Sarala',sans-serif;
+    color: rgba(50, 171, 226, 1.0);
+    font-weigth: 600;
+    font-size: 13px;
+	transition:all 0.4s;
+	margin-top: 13px;
+}
+
+.passeio-destaque3 .meia-volta-ilha-info-botton:hover{
+		transform: scale(1.07);
+}
+
+/* Destaque 4*/
+
+.passeio-destaque4 .ilhas-paradisiacas-destaque {
+	height: 44vh;
+	width: 19vw;
+	border-radius: 10px;
+	box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+	margin-left: 0.5vw;
+	margin-top: 1vh;
+}
+
+.passeio-destaque4 .ilhas-paradisiacas-destaque:hover {
+	transform: scale(1.07);
+	transition: .5s;
+}
+
+.passeio-destaque4 .ilhas-paradisiacas-destaque-titulo{
+	margin-left: 1vw;
+	margin-top: 10px;
+	font-family: 'Righteous', cursive;
+    color: rgba(255, 255, 255, 1.0);
+    font-weigth: 400;
+    font-size: 18px;
+	font-weigth: 600;
+}
+
+.passeio-destaque4 .ilhas-paradisiacas-horario{
+	margin-left: 1vw;
+	margin-top: 5px;
+    font-family: 'Sarala',sans-serif;
+    color: rgba(255, 255, 255, 1.0);
+    font-weigth: 400;
+    font-size: 14px;
+}
+
+.passeio-destaque4 .ilhas-paradisiacas-horario-h{
+	margin-left: 1vw;
+	margin-top: 5px;
+    font-family: 'Sarala',sans-serif;
+    color: rgba(255, 255, 255, 1.0);
+    font-weigth: 400;
+    font-size: 16px;
+}
+
+.passeio-destaque4 .ilhas-paradisiacas-info-botton{
+	background-color: rgba(255, 255, 255, 1.0);
+    width: 10vw;
+    height: 5vh;
+    border: none;
+	margin-left: 5vw;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Sarala',sans-serif;
+    color:rgba(50, 171, 226, 1.0);
+    font-weigth: 600;
+    font-size: 13px;
+	transition:all 0.4s;
+	margin-top: 13px;
+}
+
+.passeio-destaque4 .ilhas-paradisiacas-info-botton:hover{
 		transform: scale(1.07);
 }
 
